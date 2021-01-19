@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* ********************************************************************* */
+/* ******************* LES STYLES ************************************** */
+/* ********************************************************************* */
+body	{background-color:#f0f0f0; padding-bottom : 20px;}
+.colonne_centre {overflow: visible;	width: 80%;background: #ffffff;center;box-shadow: 0px 0px 20px #555; padding-bottom : 20px;margin-top: 150px;}
+.corps	{margin:5% 15%; text-align:justify}
+.avec_survol    {font-family:Petit Formal Script; color:black; text-decoration: none;}
+.menu	{padding:20px 15px;}
+.menu li {  display:inline;padding:0% 2%;float:left;}
+.dropdown-content {  display: none; text-align:left;  position: absolute; background: rgba(255,255,255,0.9);  min-width: 120px;  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  padding: 12px 16px; }
+.dropdown-content a {  float: none;  text-decoration: none; display: block; padding: 12px 0px; }
+.dropdown {  position: relative;  display: inline-block;}
+.navbar {  overflow: visible;  background-color:rgb(100,100,100);  position: fixed;
+  top: 0;  width: 100%;}
+
+/* ********************************************************************* */
+/* ********************ECRAN NON TACTILE ******************************* */
+/* ********************************************************************* */
+@media (hover: hover) 
+	{.dropdown a:hover{text-shadow:5px 5px 10px black;}
+	.dropdown:hover .dropdown-content{display: block;}
+	.menu li {font-size:25px;}
+	.menu_fleche{width: 40px ;height : auto;}
+	.menu_maison{width: 80px ;height : auto;}
+	.menu_sauf_maison{padding:20px 0px;}
+	.corps{font-size:20px;}
+	.sans_survol{display: none;}}
+
+/* ********************************************************************* */
+/* *********************** ECRAN TACTILE ******************************* */
+/* ********************************************************************* */
+@media (hover: none) 
+	{
+	body{margin:0px 0px;background-color:#ffffff;}
+	.colonne_centre {width: 100%;}
+	.menu li {font-size:6vw;padding:2px 0%;}
+	.menu_fleche{width: 40px ;height : auto;}
+	.menu_maison{width: 100px ;height : auto;}
+	.menu_sauf_maison{padding:30px 0px;}
+	.avec_survol{display: none;} .show {display: block;} 
+	.corps{ margin : 5% 5% ;font-size:4vw;}}
+    
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');
+</style>
+</head>
+
+
+
+
+<body>
+<div class="navbar">
+<ul class="menu" id="monMenu" align="left" >
+
+<li>
+<a href="page_acceuil.html"><img class="menu_maison" src="images/telechargement.png"> </a>
+</li>
+
+<div class="menu_sauf_maison" >
+
+<li>
+<img class="menu_fleche" src="images/superieur.png"> 
+</li>
+
+<li>
+<div class="dropdown">
+  <b><a class="avec_survol" href="page3_voyages.html">Voyages</a></b>
+  <b><div onclick="myFunction()" class="sans_survol">Voyages</div></b>
+  <div id="myDropdown" class="dropdown-content">
+  <a href="page_chine.html" style="color:black;">Chine</a>
+  <a href="page_thailande.html" style="color:black;">thailande</a>
+  <a href="page_malaisie.html" style="color:black;">malaisie</a>
+  <a href="page_danemark.html" style="color:black;">danemark</a>
+  </div>
+</div>
+</li>
+
+<li>
+<img class="menu_fleche" src="images/superieur.png"> 
+</li>
+
+<li>
+<div class="dropdown" >
+  <b><a class="avec_survol" href="page_malaisie.html" >Malaisie</a></b>
+  <b><div onclick="myFunction2()" class="sans_survol" >Malaisie</div></b>
+  <div id="myDropdown2" class="dropdown-content">
+  <a href="#partie1" style="color:black;">Sur le départ</a>
+  <a href="#partie2" style="color:black;">Kuala Lumpur</a>
+  <a href="#partie3" style="color:black;">Pangkor</a>
+  <a href="#partie4" style="color:black;">Les plantations de thé</a>
+  <a href="#partie5" style="color:black;">Perhentian islands</a>
+  <a href="#partie5" style="color:black;">Melacca</a>
+  <a href="#partie5" style="color:black;">Georgetown</a>
+  </div>
+</div>
+</li>
+
+</div>
+</ul>
+</div>
+
+
+
+
+
+<center>
+<div class="colonne_centre" >
+
+
+
+
+<div class="corps">
+<br>
+<h2 align="center" id="partie1"> Le grand départ</h2>
+<div>
+Kuala Lumpur.<br>
+Vous avez sûrement déjà entendu ce nom quelque part, cette ville au nom exotique a sans doute déjà résonné dans vos oreilles au moins une fois. Et pourtant, si vous 
+deviez la placer précisément sur une carte, je suis prêt à parier que beaucoup d'entre vous hésiteraient.Moi aussi. Alors quand on m'a proposé d'aller y travailler 
+pendant 3 mois, j'ai commencé par regarder une carte. A l'époque je suis en 4eme annee d'ecole, et les professeurs nous conseillent de partir à l'étranger pour le 
+stage de fin d'année. C'est l'occasion de découvrir une nouvelle culture, avoir une expérience, bla bla bla... De toute façon ça tombe bien, j'avais déjà envie 
+de partir à l'étranger pour une partie de mes études si l'occasion se présentait, car je sentais que j'allais vivre beaucoup de moments forts et garder des souvenirs 
+inoubliables. 
+De manière générale, sortir 
+de ma zone de confort.
+Kuala Lumpur (ou Kuala), c'est la capitale de la malaisie, un pays 
+d' asie du sud pas loin  
+<center><img src="images/photos_malaisie/image1.jpg" width="60%" height="auto"> </center>
+</div>
+ 
+ 
+
+<h2 align="center" id="partie2"> Kuala Lumpur</h2>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis erat sed dui tincidunt facilisis. Nullam mollis  
+<center><img src="images/photos_malaisie/image8.jpg" width="60%" height="auto"> </center>
+</div>
+
+<h2 align="center" id="partie3"> Pangkor</h2>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis erat sed dui tincidunt facilisis. Nullam mollis  
+<center><img src="images/photos_malaisie/image3.jpg" width="60%" height="auto"> </center>
+</div>
+
+<h2 align="center" id="partie4"> Les plantations de thé</h2>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis erat sed dui tincidunt facilisis. Nullam mollis  
+</div>
+
+<h2 align="center" id="partie5"> Perhentian islands</h2>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis erat sed dui tincidunt facilisis. Nullam mollis  
+</div>
+
+
+<h2 align="center" id="partie5"> Melacca</h2>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis erat sed dui tincidunt facilisis. Nullam mollis  
+</div>
+
+
+<h2 align="center" id="partie5"> Georgetown</h2>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis erat sed dui tincidunt facilisis. Nullam mollis 
+<center><img src="images/photos_malaisie/image2.jpg" width="60%" height="auto"> </center> 
+</div>
+ 
+</div> 
+</div>
+</center>
+
+
+
+<script>
+/* ********************************************************************* */
+/* ************************* FONCTIONS ******************************** */
+/* ********************************************************************* */
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) 
+	{ if (!event.target.matches('.sans_survol')) 
+    	{var dropdowns = document.getElementsByClassName("dropdown-content");   var i;
+    	 for (i = 0; i < dropdowns.length; i++) 
+         	{var openDropdown = dropdowns[i];
+             if (openDropdown.classList.contains('show')) 
+             	{ openDropdown.classList.remove('show'); }
+   			 }
+ 		 }
+	}
+</script>
+
+<br><br><br><br>
+</body>
+</html>
