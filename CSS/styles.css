@@ -1,8 +1,8 @@
 /* ********************************************************************* */
 /* ******************* LES STYLES ************************************** */
 /* ********************************************************************* */
-body	{background-color:#f0f0f0; padding-bottom : 20px;}
-.corps	{margin:5% 15%; text-align:justify; background: #ffffff}
+body	{background-color:#ffffff; padding-bottom : 20px;}
+.corps	{margin:5% 15%; text-align:justify}
 .avec_survol    {font-family:Petit Formal Script; color:black; text-decoration: none;}
 .menu	{padding:20px 15px;}
 .menu li {  display:inline;padding:0% 2%;float:left;}
