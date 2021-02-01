@@ -10,7 +10,7 @@ body	{background-color:#ffffff; padding-bottom : 20px;}
 .dropdown-content a {  float: none;  text-decoration: none; display: block; padding: 12px 0px; }
 .dropdown {  position: relative;  display: inline-block;}
 .navbar {  overflow: visible;  background-color:#f0f0f0;  position: fixed; top: 0;  width: 100%;}
-h2 {align :center}
+h2 {text-align: center}
 
 /* ********************************************************************* */
 /* ********************ECRAN NON TACTILE ******************************* */
