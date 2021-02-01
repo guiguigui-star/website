@@ -1,8 +1,7 @@
 /* ********************************************************************* */
 /* ******************* LES STYLES ************************************** */
 /* ********************************************************************* */
-body	{background-color:#ffffff; padding-bottom : 20px; text-align: center}
-.corps	{margin:5% 15px; text-align:justify}
+body	{background-color:#ffffff; padding-bottom : 20px; text-align:center; text-align:justify}
 .avec_survol    {font-family:Petit Formal Script; color:black; text-decoration: none;}
 .menu	{padding:20px 15px;}
 .menu li {  display:inline;padding:0% 2%;float:left;}
@@ -10,6 +9,7 @@ body	{background-color:#ffffff; padding-bottom : 20px; text-align: center}
 .dropdown-content a {  float: none;  text-decoration: none; display: block; padding: 12px 0px; }
 .dropdown {  position: relative;  display: inline-block;}
 .navbar {  overflow: visible;  background-color:#f0f0f0;  position: fixed; top: 0;  width: 100%;}
+h2 {font-size:40px;}
 
 /* ********************************************************************* */
 /* ********************ECRAN NON TACTILE ******************************* */
