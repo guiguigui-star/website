@@ -1,162 +1,73 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="../CSS/styles.css">
 <html>
 <head>
-<style>
-/* ********************************************************************* */
-/* ******************* LES STYLES ************************************** */
-/* ********************************************************************* */
-body	{background-color:#f0f0f0; padding-bottom : 20px;}
-.colonne_centre {overflow: visible;	width: 80%;background: #ffffff;center;box-shadow: 0px 0px 20px #555; padding-bottom : 20px;margin-top: 150px;}
-.corps	{margin:5% 15%; text-align:justify}
-.avec_survol    {font-family:Petit Formal Script; color:black; text-decoration: none;}
-.menu	{padding:20px 15px;}
-.menu li {  display:inline;padding:0% 2%;float:left;}
-.dropdown-content {  display: none; text-align:left;  position: absolute; background: rgba(255,255,255,0.9);  min-width: 120px;  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  padding: 12px 16px; }
-.dropdown-content a {  float: none;  text-decoration: none; display: block; padding: 12px 0px; }
-.dropdown {  position: relative;  display: inline-block;}
-.navbar {  overflow: visible;  background-color:rgb(100,100,100);  position: fixed;
-  top: 0;  width: 100%;}
-
-/* ********************************************************************* */
-/* ********************ECRAN NON TACTILE ******************************* */
-/* ********************************************************************* */
-@media (hover: hover) 
-	{.dropdown a:hover{text-shadow:5px 5px 10px black;}
-	.dropdown:hover .dropdown-content{display: block;}
-	.menu li {font-size:25px;}
-	.menu_fleche{width: 40px ;height : auto;}
-	.menu_maison{width: 80px ;height : auto;}
-	.menu_sauf_maison{padding:20px 0px;}
-	.corps{font-size:20px;}
-	.sans_survol{display: none;}}
-
-/* ********************************************************************* */
-/* *********************** ECRAN TACTILE ******************************* */
-/* ********************************************************************* */
-@media (hover: none) 
-	{
-	body{margin:0px 0px;background-color:#ffffff;}
-	.colonne_centre {width: 100%;}
-	.menu li {font-size:6vw;padding:2px 0%;}
-	.menu_fleche{width: 40px ;height : auto;}
-	.menu_maison{width: 100px ;height : auto;}
-	.menu_sauf_maison{padding:30px 0px;}
-	.avec_survol{display: none;} .show {display: block;} 
-	.corps{ margin : 5% 5% ;font-size:4vw;}}
-    
-</style>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');
-</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');
+	</style>
 </head>
 
 
+<div class="navbar">
+	<ul class="menu" id="monMenu" align="left" >
 
+		<li>
+			<a href="../index.html"><img class="menu_maison" src="images/telechargement.png"> </a>
+		</li>
+		<div class="menu_sauf_maison" >
+			<li>
+				<div class="dropdown">
+  					<b><a class="avec_survol" href="page3_voyages.html">Villes</a></b>
+  					<b><div onclick="myFunction()" class="sans_survol">Voyages</div></b>
+  						<div id="myDropdown" class="dropdown-content">
+  							<a href="page_chine.html" style="color:black;">Beijing</a>
+  							<a href="page_thailande.html" style="color:black;">Shanghai</a>
+  							<a href="page_malaisie.html" style="color:black;">Nanjing</a>
+  						</div>
+					</div>
+			</li>
+			<li>
+				<div class="dropdown">
+  					<b><a class="avec_survol" href="page3_voyages.html">Argent</a></b>
+  					<b><div onclick="myFunction()" class="sans_survol">Voyages</div></b>
+					</div>
+			</li>
+		</div>
+	</ul>	
+</div>
+	
 
 <body>
-<div class="navbar">
-<ul class="menu" id="monMenu" align="left" >
-
-<li>
-<a href="page_acceuil.html"><img class="menu_maison" src="images/telechargement.png"> </a>
-</li>
-
-<div class="menu_sauf_maison" >
-
-<li>
-<img class="menu_fleche" src="images/superieur.png"> 
-</li>
-
-<li>
-<div class="dropdown">
-  <b><a class="avec_survol" href="page3_voyages.html">Voyages</a></b>
-  <b><div onclick="myFunction()" class="sans_survol">Voyages</div></b>
-  <div id="myDropdown" class="dropdown-content">
-  <a href="page_chine.html" style="color:black;">Chine</a>
-  <a href="page_thailande.html" style="color:black;">thailande</a>
-  <a href="page_malaisie.html" style="color:black;">malaisie</a>
-  <a href="page_danemark.html" style="color:black;">danemark</a>
-  </div>
-</div>
-</li>
-
-<li>
-<img class="menu_fleche" src="images/superieur.png"> 
-</li>
-
-<li>
-<div class="dropdown" >
-  <b><a class="avec_survol" href="page_thailande.html" >Thailande</a></b>
-  <b><div onclick="myFunction2()" class="sans_survol" >Thailande</div></b>
-  <div id="myDropdown2" class="dropdown-content">
-  <a href="#partie1" style="color:black;">Bangkok</a>
-  <a href="#partie2" style="color:black;">Chiang mai</a>
-  <a href="#partie3" style="color:black;">Chiang rai</a>
-  <a href="#partie4" style="color:black;">Le triangle d'or</a>
-  </div>
-</div>
-</li>
-
-</div>
-</ul>
-</div>
-
-
-
-<center>
-<div class="colonne_centre" >
-
-
-
-
-<div class="corps">
-<br>
-<h2 align="center" id="partie1"> Bangkok</h2>
+<h2 id="partie1"> Sur le départ</h2>
 <div>
-la thailande c'est super<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget massa ac libero viverra rhoncus. Integer 
-enim felis, venenatis vitae rhoncus in, tempus ut turpis. Sed luctus libero id pellentesque pulvinar. Integer quis scelerisque magna. 
-Nulla justo risus, tincidunt et tempus nec, sagittis pharetra dui. Suspendisse congue mauris sit amet cursus iaculis.<br><br>
-<center><img src="images/photos_thailande/image3.jpg" width="80%" height="auto"> </center><br>
-<center><img src="images/photos_thailande/image9.jpg" width="80%" height="auto"> </center><br>Aliquam bibendum 
-lacus non nisi posuere aliquet. Nam quis arcu nec urna laoreet malesuada. Praesent gravida purus at lorem volutpat pulvinar. Fusce leo justo,
- aliquet a fermentum vitae, laoreet eleifend ligula. Integer luctus non nisi sit amet consectetur. Pellentesque ut pulvinar nisi, ut viverra 
- justo. Maecenas tempus lacus ex. Phasellus faucibus consequat justo, sit amet fringilla neque gravida et.
-Duis sit amet scelerisque arcu. Pellentesque eu neque ut lorem feugiat ultrices non nec orci. Vestibulum posuere diam eu porta varius.
- In hac habitasse platea dictumst. Vivamus posuere diam vitae consequat lobortis. Curabitur vestibulum libero ut mauris venenatis, nec 
- sodales sem euismod. Integer luctus ut dolor in efficitur. Aliquam euismod, diam eu mattis accumsan, nunc sapien vulputate nisi, sit amet 
- vestibulum libero erat ut ante. Curabitur tempor, velit commodo euismod sodales, metus libero hendrerit metus, eu imperdiet felis diam nec 
- leo. Cras ut nulla et dolor suscipit venenatis. Quisque eget euismod nisi, sit amet rhoncus nibh. Aliquam erat volutpat. Etiam nibh urna, 
- elementum eu neque quis, varius vestibulum sem. Sed finibus libero nec arcu semper sagittis.
+	Du 30 Mars au 14 000 Avril 2019 je suis parti en Chine pour la première fois de ma vie. Pourquoi la Chine ? Avant tout pour la liberté d'expression (lol), l'air 
+	pur de pékin (loool), la facilité de parler anglais (loooooooool) et aussi parce que ça fait des mois que j'ai acheté mes billets
+	 et préparé le voyage (looooooooooooooooo--bon ok j'arrête).
+	pendant mon séjour.
 </div>
- 
- 
-<h2 align="center" id="partie2"> Chiang Mai</h2>
+	
+<h2 id="partie5"> Il est l'heure de rentrer</h2>
+	
+<img src="images/photos_thailande/image1.jpg">
+	
 <div>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis erat sed dui tincidunt facilisis. Nullam mollis 
-<br><br><center><img src="images/photos_thailande/image4.jpg" width="80%" height="auto"> </center> <br>
-<center><img src="images/photos_thailande/image5.jpg" width="80%" height="auto"> </center>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis erat sed dui tincidunt facilisis. Nullam mollis Ultima Syriarum est Palaestina per intervalla magna protenta, cultis abundans terris et nitidis et civitates habens quasdam egregias, nullam nulli cedentem sed sibi vicissim velut ad perpendiculum aemulas: Caesaream, quam ad honorem Octaviani principis exaedificavit Herodes, et Eleutheropolim et Neapolim itidemque Ascalonem Gazam aevo superiore exstructas.
+Nemo quaeso miretur, si post exsudatos labores itinerum longos congestosque adfatim commeatus fiducia vestri ductante barbaricos pagos adventans velut mutato repente consilio ad placidiora deverti.
+Vide, quantum, inquam, fallare, Torquate. oratio me istius philosophi non offendit; nam et complectitur verbis, quod vult, et dicit plane, quod intellegam; et tamen ego a philosopho, si afferat eloquentiam, non asperner, si non habeat, non admodum flagitem. re mihi non aeque satisfacit, et quidem locis pluribus. sed quot homines, tot sententiae; falli igitur possumus.
+Apud has gentes, quarum exordiens initium ab Assyriis ad Nili cataractas porrigitur et confinia Blemmyarum, omnes pari sorte sunt bellatores seminudi coloratis sagulis pube tenus amicti, equorum adiumento pernicium graciliumque camelorum per diversa se raptantes, in tranquillis vel turbidis rebus: nec eorum quisquam aliquando stivam adprehendit vel arborem colit aut arva subigendo quaeritat victum, sed errant semper per spatia longe lateque distenta sine lare sine sedibus fixis aut legibus: nec idem perferunt diutius caelum aut tractus unius soli illis umquam placet.
+Quibus occurrere bene pertinax miles explicatis ordinibus parans hastisque feriens scuta qui habitus iram pugnantium concitat et dolorem proximos iam gestu terrebat sed eum in certamen alacriter consurgentem revocavere ductores rati intempestivum anceps subire certamen cum haut longe muri distarent, quorum tutela securitas poterat in solido locari cunctorum.
+Ob haec et huius modi multa, quae cernebantur in paucis, omnibus timeri sunt coepta. et ne tot malis dissimulatis paulatimque serpentibus acervi crescerent aerumnarum, nobilitatis decreto legati mittuntur: Praetextatus ex urbi praefecto et ex vicario Venustus et ex consulari Minervius oraturi, ne delictis supplicia sint grandiora, neve senator quisquam inusitato et inlicito more tormentis exponeretur.
+Ergo ego senator inimicus, si ita vultis, homini, amicus esse, sicut semper fui, rei publicae debeo. Quid? si ipsas inimicitias, depono rei publicae causa, quis me tandem iure reprehendet, praesertim cum ego omnium meorum consiliorum atque factorum exempla semper ex summorum hominum consiliis atque factis mihi censuerim petenda.
+Mensarum enim voragines et varias voluptatum inlecebras, ne longius progrediar, praetermitto illuc transiturus quod quidam per ampla spatia urbis subversasque silices sine periculi metu properantes equos velut publicos signatis quod dicitur calceis agitant, familiarium agmina tamquam praedatorios globos post terga trahentes ne Sannione quidem, ut ait comicus, domi relicto. quos imitatae matronae complures opertis capitibus et basternis per latera civitatis cuncta discurrunt.
+Et quia Mesopotamiae tractus omnes crebro inquietari sueti praetenturis et stationibus servabantur agrariis, laevorsum flexo itinere Osdroenae subsederat extimas partes, novum parumque aliquando temptatum commentum adgressus. quod si impetrasset, fulminis modo cuncta vastarat. erat autem quod cogitabat huius modi.
+Montius nos tumore inusitato quodam et novo ut rebellis et maiestati recalcitrantes Augustae per haec quae strepit incusat iratus nimirum quod contumacem praefectum, quid rerum ordo postulat ignorare dissimulantem formidine tenus iusserim custodiri.
+Et interdum acciderat, ut siquid in penetrali secreto nullo citerioris vitae ministro praesente paterfamilias uxori susurrasset in aurem, velut Amphiarao referente aut Marcio, quondam vatibus inclitis, postridie disceret imperator. ideoque etiam parietes arcanorum soli conscii timebantur.
+Post hanc adclinis Libano monti Phoenice, regio plena gratiarum et venustatis, urbibus decorata magnis et pulchris; in quibus amoenitate celebritateque nominum Tyros excellit, Sidon et Berytus isdemque pares Emissa et Damascus saeculis condita priscis.
+Verum ad istam omnem orationem brevis est defensio. Nam quoad aetas M. Caeli dare potuit isti suspicioni locum, fuit primum ipsius pudore, deinde etiam patris diligentia disciplinaque munita. Qui ut huic virilem togam deditšnihil dicam hoc loco de me; tantum sit, quantum vos existimatis; hoc dicam, hunc a patre continuo ad me esse deductum; nemo hunc M. Caelium in illo aetatis flore vidit nisi aut cum patre aut mecum aut in M. Crassi castissima domo, cum artibus honestissimis erudiretur.
+Nec piget dicere avide magis hanc insulam populum Romanum invasisse quam iuste. Ptolomaeo enim rege foederato nobis et socio ob aerarii nostri angustias iusso sine ulla culpa proscribi ideoque hausto veneno voluntaria morte deleto et tributaria facta est et velut hostiles eius exuviae classi inpositae in urbem advectae sunt per Catonem, nunc repetetur ordo gestorum.
+Hac ita persuasione reducti intra moenia bellatores obseratis undique portarum aditibus, propugnaculis insistebant et pinnis, congesta undique saxa telaque habentes in promptu, ut si quis se proripuisset interius, multitudine missilium sterneretur et lapidum.
 </div>
-
-<h2 align="center" id="partie3"> Chiang Rai</h2>
-<div>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis erat sed dui tincidunt facilisis. Nullam mollis  
-<br><br><center><img src="images/photos_thailande/image2.jpg" width="80%" height="auto"> </center> <br>
-Vivamus posuere diam vitae consequat lobortis. Curabitur vestibulum libero ut mauris venenatis, nec 
- sodales sem euismod. Integer luctus ut dolor in efficitur. Aliquam euismod, diam eu mattis accumsan, nunc sapien vulputate nisi, sit amet 
- vestibulum libero erat ut ante. Curabitur tempor, velit commodo euismod sodales, metus libero hendrerit metus, eu imperdiet felis diam nec 
- leo. Cras ut nulla et dolor suscipit venenatis. Quisque eget euismod nisi, sit amet rhoncus nibh. Aliquam erat volutpat. Etiam nibh urna, 
- elementum eu neque quis, varius vestibulum sem. Sed finibus libero nec arcu semper sagittis.
-<br><br><center><img src="images/photos_thailande/image7.jpg" width="80%" height="auto"> </center> <br>
-</div>
-
-<h2 align="center" id="partie4"> Le triangle d'or</h2>
-<div>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis erat sed dui tincidunt facilisis. Nullam mollis 
-<center><img src="images/photos_thailande/image8.jpg" width="80%" height="auto"> </center> <br></div>
- 
 </div> 
-</div>
-</center>
 
 
 
@@ -185,6 +96,5 @@ window.onclick = function(event)
 	}
 </script>
 
-<br><br><br><br>
 </body>
 </html>
