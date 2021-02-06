@@ -10,6 +10,7 @@ body	{background-color:#ffffff; padding-bottom : 20px; margin:0; padding-left:0;
 .dropdown {  position: relative;  display: inline-block;}
 .navbar {  overflow: visible;  background-color:#f0f0f0;  position: fixed; top: 0;  width: 100%;}
 h2 {font-size:40px;text-align:center;}
+p { padding: 20px; }
 
 /* ********************************************************************* */
 /* ********************ECRAN NON TACTILE ******************************* */
