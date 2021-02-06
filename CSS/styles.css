@@ -1,7 +1,7 @@
 /* ********************************************************************* */
 /* ******************* LES STYLES ************************************** */
 /* ********************************************************************* */
-body	{background-color:#ffffff; padding-bottom : 20px; text-align:center; text-align:justify; font-size:20px;}
+body	{background-color:#ffffff; padding-bottom : 20px; margin:0; padding-left:0; padding-left:0; text-align:center; text-align:justify; font-size:20px;}
 .avec_survol    {font-family:Petit Formal Script; color:black; text-decoration: none;}
 .menu	{padding:20px 15px;}
 .menu li {  display:inline;padding:0% 2%;float:left;}
