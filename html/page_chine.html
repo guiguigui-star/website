@@ -1,185 +1,71 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<link rel="stylesheet" href="CSS/styles.css">
 <html>
 <head>
-<style>
-/* ********************************************************************* */
-/* ******************* LES STYLES ************************************** */
-/* ********************************************************************* */
-body	{background-color:#f0f0f0; padding-bottom : 20px;}
-.colonne_centre {overflow: visible;	width: 80%;background: #ffffff;center;box-shadow: 0px 0px 20px #555; padding-bottom : 20px;margin-top: 150px;}
-.corps	{margin:5% 15%; text-align:justify}
-.avec_survol    {font-family:Petit Formal Script; color:black; text-decoration: none;}
-.menu	{padding:20px 15px;}
-.menu li {  display:inline;padding:0% 2%;float:left;}
-.dropdown-content {  display: none; text-align:left;  position: absolute; background: rgba(255,255,255,0.9);  min-width: 120px;  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  padding: 12px 16px; }
-.dropdown-content a {  float: none;  text-decoration: none; display: block; padding: 12px 0px; }
-.dropdown {  position: relative;  display: inline-block;}
-.navbar {  overflow: visible;  background-color:rgb(100,100,100);  position: fixed;
-  top: 0;  width: 100%;}
-
-/* ********************************************************************* */
-/* ********************ECRAN NON TACTILE ******************************* */
-/* ********************************************************************* */
-@media (hover: hover) 
-	{.dropdown a:hover{text-shadow:5px 5px 10px black;}
-	.dropdown:hover .dropdown-content{display: block;}
-	.menu li {font-size:25px;}
-	.menu_fleche{width: 40px ;height : auto;}
-	.menu_maison{width: 80px ;height : auto;}
-	.menu_sauf_maison{padding:20px 0px;}
-	.corps{font-size:20px;}
-	.sans_survol{display: none;}}
-
-/* ********************************************************************* */
-/* *********************** ECRAN TACTILE ******************************* */
-/* ********************************************************************* */
-@media (hover: none) 
-	{
-	body{margin:0px 0px;background-color:#ffffff;}
-	.colonne_centre {width: 100%;}
-	.menu li {font-size:6vw;padding:2px 0%;}
-	.menu_fleche{width: 40px ;height : auto;}
-	.menu_maison{width: 100px ;height : auto;}
-	.menu_sauf_maison{padding:30px 0px;}
-	.avec_survol{display: none;} .show {display: block;} 
-	.corps{ margin : 5% 5% ;font-size:4vw;}}
-    
-</style>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');
-</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');
+	</style>
 </head>
 
 
+<div class="navbar">
+	<ul class="menu" id="monMenu" align="left" >
 
+		<li>
+			<a href="page_acceuil.html"><img class="menu_maison" src="images/telechargement.png"> </a>
+		</li>
+		<div class="menu_sauf_maison" >
+			<li>
+				<img class="menu_fleche" src="images/superieur.png"> 
+			</li>
+			<li>
+				<div class="dropdown">
+  					<b><a class="avec_survol" href="page3_voyages.html">Voyages</a></b>
+  					<b><div onclick="myFunction()" class="sans_survol">Voyages</div></b>
+  						<div id="myDropdown" class="dropdown-content">
+  							<a href="page_chine.html" style="color:black;">Chine</a>
+  							<a href="page_thailande.html" style="color:black;">thailande</a>
+  							<a href="page_malaisie.html" style="color:black;">malaisie</a>
+ 							<a href="page_danemark.html" style="color:black;">danemark</a>
+  						</div>
+					</div>
+			</li>
+		</div>
+	</ul>	
+</div>
+	
 
 <body>
-<div class="navbar">
-<ul class="menu" id="monMenu" align="left" >
-
-<li>
-<a href="page_acceuil.html"><img class="menu_maison" src="images/telechargement.png"> </a>
-</li>
-
-<div class="menu_sauf_maison" >
-
-<li>
-<img class="menu_fleche" src="images/superieur.png"> 
-</li>
-
-<li>
-<div class="dropdown">
-  <b><a class="avec_survol" href="page3_voyages.html">Voyages</a></b>
-  <b><div onclick="myFunction()" class="sans_survol">Voyages</div></b>
-  <div id="myDropdown" class="dropdown-content">
-  <a href="page_chine.html" style="color:black;">Chine</a>
-  <a href="page_thailande.html" style="color:black;">thailande</a>
-  <a href="page_malaisie.html" style="color:black;">malaisie</a>
-  <a href="page_danemark.html" style="color:black;">danemark</a>
-  </div>
-</div>
-</li>
-
-<li>
-<img class="menu_fleche" src="images/superieur.png"> 
-</li>
-
-<li>
-<div class="dropdown" >
-  <b><a class="avec_survol" href="page_chine.html" >Chine</a></b>
-  <b><div onclick="myFunction2()" class="sans_survol" >Chine</div></b>
-  <div id="myDropdown2" class="dropdown-content">
-  <a href="#partie1" style="color:black;">Sur le départ</a>
-  <a href="#partie2" style="color:black;">Beijing</a>
-  <a href="#partie3" style="color:black;">Shanghai</a>
-  <a href="#partie4" style="color:black;">Nanjing</a>
-  <a href="#partie5" style="color:black;">L'heure de rentrer</a>
-  </div>
-</div>
-</li>
-
-</div>
-</ul>
-</div>
-
-
-
-
-<center>
-<div class="colonne_centre" >
-
-
-
-
-<div class="corps">
-<br>
-<h2 align="center" id="partie1"> Sur le départ</h2>
+<h2 id="partie1"> Sur le départ</h2>
 <div>
-Du 30 Mars au 14 Avril 2019 je suis parti en Chine pour la première fois de ma vie. Pourquoi la Chine ? Avant tout pour la liberté d'expression (lol), l'air 
-pur de pékin (loool), la facilité de parler anglais (loooooooool) et aussi parce que ça fait des mois que j'ai acheté mes billets
- et préparé le voyage (looooooooooooooooo--bon ok j'arrête). <br><br>
- <center><img src="images/photos_chine/image1.jpg" width="70%" height="auto"> </center><br> Non, si j'ai choisi cette destination c'est 
-pour voir ma copine qui vit à Pékin et feter son anniversaire. C'est aussi l'occasion de découvrir le pays, ses rouages et les gens qui y vivent.
-J'ai envie d'y aller, je pose mes vacances,bref, tout est bon pour partir !
-Sauf que pour partir en Chine c'est assez contrôlé et il faut faire un visa assez fourni.<br> Je vous passe les détails mais en gros, 
-une fois que tu as prouvé que tu ne vas pas dormir sur un trottoir et que tu es assuré en cas de pépin, ça devrait aller. 
-2 allers-retours à l'ambassade plus tard, je ressors avec mon visa tout neuf.<br>
-Je vais en Chine pour du loisir, je ne parle pas la langue et je ne sais ni lire ni écrire, donc ça risque d'être un peu
-compliqué. Ceci dit j'ai la chance d'avoir ma copine chinoise, donc je ne serai pas tout à fait au niveau zéro sur l'échelle du touriste
-pendant mon séjour.
-<br><br>
+	Du 30 Mars au 14 000 Avril 2019 je suis parti en Chine pour la première fois de ma vie. Pourquoi la Chine ? Avant tout pour la liberté d'expression (lol), l'air 
+	pur de pékin (loool), la facilité de parler anglais (loooooooool) et aussi parce que ça fait des mois que j'ai acheté mes billets
+	 et préparé le voyage (looooooooooooooooo--bon ok j'arrête).
+	pendant mon séjour.
 </div>
- 
- 
-
-<h2 align="center" id="partie2"> Beijing</h2>
+	
+<h2 id="partie5"> Il est l'heure de rentrer</h2>
+	
+<img src="images/photos_chine/image1.jpg">
+	
 <div>
-Arrivée à l'aéroport : ça commence.<br> Déjà je dois remplir un formulaire avec mes informations, redonner mon adresse
-sur place, mes contacts, je dois passer mes bagages au portique, donner mes empreintes digitales, on vérifie attentivement que je correspond
-bien à la photo sur mon visa... J'ai même du répondre à un petit questionnaire sur le régime communiste pour qu'on me laisse entrer ! (Bon ça 
-c'est pas vrai mais ça m'aurait pas étonné ^^).<br>Pssées ces étapes, ma copine m'attend à l'aéroport (<3) et le voyage commence...
-<br>
- <center><img src="images/photos_chine/image3.jpg" width="70%" height="auto"> </center><br><br>
-
-  <center><img src="images/photos_chine/image4.jpg" width="70%" height="auto"> </center><br><br>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis erat sed dui tincidunt facilisis. Nullam mollis Ultima Syriarum est Palaestina per intervalla magna protenta, cultis abundans terris et nitidis et civitates habens quasdam egregias, nullam nulli cedentem sed sibi vicissim velut ad perpendiculum aemulas: Caesaream, quam ad honorem Octaviani principis exaedificavit Herodes, et Eleutheropolim et Neapolim itidemque Ascalonem Gazam aevo superiore exstructas.
+Nemo quaeso miretur, si post exsudatos labores itinerum longos congestosque adfatim commeatus fiducia vestri ductante barbaricos pagos adventans velut mutato repente consilio ad placidiora deverti.
+Vide, quantum, inquam, fallare, Torquate. oratio me istius philosophi non offendit; nam et complectitur verbis, quod vult, et dicit plane, quod intellegam; et tamen ego a philosopho, si afferat eloquentiam, non asperner, si non habeat, non admodum flagitem. re mihi non aeque satisfacit, et quidem locis pluribus. sed quot homines, tot sententiae; falli igitur possumus.
+Apud has gentes, quarum exordiens initium ab Assyriis ad Nili cataractas porrigitur et confinia Blemmyarum, omnes pari sorte sunt bellatores seminudi coloratis sagulis pube tenus amicti, equorum adiumento pernicium graciliumque camelorum per diversa se raptantes, in tranquillis vel turbidis rebus: nec eorum quisquam aliquando stivam adprehendit vel arborem colit aut arva subigendo quaeritat victum, sed errant semper per spatia longe lateque distenta sine lare sine sedibus fixis aut legibus: nec idem perferunt diutius caelum aut tractus unius soli illis umquam placet.
+Quibus occurrere bene pertinax miles explicatis ordinibus parans hastisque feriens scuta qui habitus iram pugnantium concitat et dolorem proximos iam gestu terrebat sed eum in certamen alacriter consurgentem revocavere ductores rati intempestivum anceps subire certamen cum haut longe muri distarent, quorum tutela securitas poterat in solido locari cunctorum.
+Ob haec et huius modi multa, quae cernebantur in paucis, omnibus timeri sunt coepta. et ne tot malis dissimulatis paulatimque serpentibus acervi crescerent aerumnarum, nobilitatis decreto legati mittuntur: Praetextatus ex urbi praefecto et ex vicario Venustus et ex consulari Minervius oraturi, ne delictis supplicia sint grandiora, neve senator quisquam inusitato et inlicito more tormentis exponeretur.
+Ergo ego senator inimicus, si ita vultis, homini, amicus esse, sicut semper fui, rei publicae debeo. Quid? si ipsas inimicitias, depono rei publicae causa, quis me tandem iure reprehendet, praesertim cum ego omnium meorum consiliorum atque factorum exempla semper ex summorum hominum consiliis atque factis mihi censuerim petenda.
+Mensarum enim voragines et varias voluptatum inlecebras, ne longius progrediar, praetermitto illuc transiturus quod quidam per ampla spatia urbis subversasque silices sine periculi metu properantes equos velut publicos signatis quod dicitur calceis agitant, familiarium agmina tamquam praedatorios globos post terga trahentes ne Sannione quidem, ut ait comicus, domi relicto. quos imitatae matronae complures opertis capitibus et basternis per latera civitatis cuncta discurrunt.
+Et quia Mesopotamiae tractus omnes crebro inquietari sueti praetenturis et stationibus servabantur agrariis, laevorsum flexo itinere Osdroenae subsederat extimas partes, novum parumque aliquando temptatum commentum adgressus. quod si impetrasset, fulminis modo cuncta vastarat. erat autem quod cogitabat huius modi.
+Montius nos tumore inusitato quodam et novo ut rebellis et maiestati recalcitrantes Augustae per haec quae strepit incusat iratus nimirum quod contumacem praefectum, quid rerum ordo postulat ignorare dissimulantem formidine tenus iusserim custodiri.
+Et interdum acciderat, ut siquid in penetrali secreto nullo citerioris vitae ministro praesente paterfamilias uxori susurrasset in aurem, velut Amphiarao referente aut Marcio, quondam vatibus inclitis, postridie disceret imperator. ideoque etiam parietes arcanorum soli conscii timebantur.
+Post hanc adclinis Libano monti Phoenice, regio plena gratiarum et venustatis, urbibus decorata magnis et pulchris; in quibus amoenitate celebritateque nominum Tyros excellit, Sidon et Berytus isdemque pares Emissa et Damascus saeculis condita priscis.
+Verum ad istam omnem orationem brevis est defensio. Nam quoad aetas M. Caeli dare potuit isti suspicioni locum, fuit primum ipsius pudore, deinde etiam patris diligentia disciplinaque munita. Qui ut huic virilem togam deditšnihil dicam hoc loco de me; tantum sit, quantum vos existimatis; hoc dicam, hunc a patre continuo ad me esse deductum; nemo hunc M. Caelium in illo aetatis flore vidit nisi aut cum patre aut mecum aut in M. Crassi castissima domo, cum artibus honestissimis erudiretur.
+Nec piget dicere avide magis hanc insulam populum Romanum invasisse quam iuste. Ptolomaeo enim rege foederato nobis et socio ob aerarii nostri angustias iusso sine ulla culpa proscribi ideoque hausto veneno voluntaria morte deleto et tributaria facta est et velut hostiles eius exuviae classi inpositae in urbem advectae sunt per Catonem, nunc repetetur ordo gestorum.
+Hac ita persuasione reducti intra moenia bellatores obseratis undique portarum aditibus, propugnaculis insistebant et pinnis, congesta undique saxa telaque habentes in promptu, ut si quis se proripuisset interius, multitudine missilium sterneretur et lapidum.
 </div>
-
-
-<h2 align="center" id="partie3"> Shanghai</h2>
-<div>
-On arrive à Shanghai en train vers 23 heures, il fait déjà nuit. Un ami d'enfance de Yi est venu nous accueillir à la gare, son 
- prénom c'est "Ola", tout de suite je le trouve sympa. Il vient voir Yi, et moi aussi je pense, pour voir à quoi je ressemble en vrai.
- A peine arrivés sur le quai, il s'empresse de prendre la valise de ma copine et je me sens un peu con, mais il faut préciser
- que je porte déjà la moitié de ses fringues dans ma propre valise.<br><br>
- On rate de justesse le dernier metro (il finit tôt en Chine) et du coup on commande un
- taxi pour aller dans le centre de Shanghai et chercher notre airB&B. <br>Evidemment il y a 3000 personnes qui ont la même idée 
- que nous (et quand
-je dis 3000 c'est pas une expression hein) et on fait la file. Quand notre tour arrive on s'engouffre dans le taxi et on roule... 
-par la fenêtre, les échangeurs routiers sur plusieurs 
-étages défilent et laissent rapidement la place aux lumières des gratte-ciel qui glissent sur la carosserie.
-<br><br>
-<center><img src="images/photos_chine/image10.jpg" width="70%" height="auto"> </center><br><br> J'entends vaguement Ola et Yi qui 
-discutent en chinois et je ne comprends pas. La voiture ralentit, on se sépare ici. Ola est plus rapide pour payer le chauffeur et j'ai 
-encore très clairement cette image quand il se retournepar dessus l'appuie-tête en annonçant "welcome to Shanghai" avec un grand sourire.
-<br>
-Le lendemain on retrouve de nouveau Ola et d'autres amis de ma copine cette fois. Au programme de la journée : visite dans Shanghai 
----> c'est parti
-<br><br><center><img src="images/photos_chine/image2.jpg" width="70%" height="auto"> </center><br><br>
-</div>
-
-
-<h2 align="center" id="partie4"> Nanjing</h2>
-<div>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis erat sed dui tincidunt facilisis. Nullam mollis  </div>
-
-
-<h2 align="center" id="partie5"> Il est l'heure de rentrer</h2>
-<div>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis erat sed dui tincidunt facilisis. Nullam mollis  </div>
-<br><br><br><br> 
 </div> 
-</div>
-</center>
 
 
 
@@ -207,7 +93,6 @@ window.onclick = function(event)
  		 }
 	}
 </script>
-
 
 </body>
 </html>
