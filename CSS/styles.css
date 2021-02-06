@@ -29,8 +29,6 @@ p { padding: 20px; }
 /* ********************************************************************* */
 @media (hover: none) 
 	{
-	body{margin:0px 0px;background-color:#ffffff;}
-	.colonne_centre {width: 100%;}
 	.menu li {font-size:6vw;padding:2px 0%;}
 	.menu_fleche{width: 40px ;height : auto;}
 	.menu_maison{width: 100px ;height : auto;}
