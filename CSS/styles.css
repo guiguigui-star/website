@@ -3,7 +3,7 @@
 /* ********************************************************************* */
 body	{background-color:#ffffff; padding-bottom : 20px; margin:0; }
 
-.navbar {text-align: center; font-family:Petit Formal Script; background-color:#e0e0e0;}
+.navbar {text-align: center; font-family:Petit Formal Script; background-color:#e0e0e0; position: fixed; top: 0;}
 .navbar li {display:inline;}
 .navbar a {text-decoration: none;}
 
