@@ -2,24 +2,26 @@
 /* ******************* LES STYLES ************************************** */
 /* ********************************************************************* */
 body	{background-color:#ffffff; padding-bottom : 20px; padding-top : 50px; margin:0; text-align:center; text-align:justify; font-size:20px;}
+h2 {font-size:40px;text-align:center;}
+p { padding: 20px; }
+
+/*
 .avec_survol    {font-family:Petit Formal Script; color:black; text-decoration: none;}
 .navbar {  overflow: visible;  background-color:#f0f0f0;  position: fixed; top: 0;  width: 100%;text-align: center;}
 .navbar li {  display:inline;padding:0% 2%;float:left;}
 .dropdown-content {  display: none; text-align:left;  position: absolute; background: rgba(100,100,100,0.9);  min-width: 120px;  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  padding: 12px 16px; }
 .dropdown-content a {  float: none;  text-decoration: none; display: block; padding: 12px 0px; }
-.dropdown {  position: relative;  display: inline-block;}
+.dropdown {  position: relative;  display: inline-block;}*/
 
-h2 {font-size:40px;text-align:center;}
-p { padding: 20px; }
 
 /* ********************************************************************* */
 /* ********************ECRAN NON TACTILE ******************************* */
 /* ********************************************************************* */
 @media (hover: hover) 
 	{
-	.navbar li:hover{text-shadow:5px 5px 10px black;}
+	/*.navbar li:hover{text-shadow:5px 5px 10px black;}
 	.dropdown a:hover{text-shadow:5px 5px 10px black;}
-	.dropdown:hover .dropdown-content{display: block;}
+	.dropdown:hover .dropdown-content{display: block;}*/
 	.sans_survol{display: none;}
 	}
 
