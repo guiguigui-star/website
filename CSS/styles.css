@@ -1,35 +1,41 @@
 /* ********************************************************************* */
 /* ******************* LES STYLES ************************************** */
 /* ********************************************************************* */
-body	{background-color:#ffffff; padding-bottom : 20px; margin:0; }
-
-.navbar {text-align: center; font-family:Petit Formal Script; background-color:#e0e0e0; position: fixed; top: 0; position: fixed; top: 0; width: 100%}
-.navbar li {display:inline;}
-.navbar a {text-decoration: none;}
-
-h2 {font-size:40px;text-align:center;}
-p { padding: 20px; text-align:center; text-align:justify; font-size:20px; }
-
+body	{background-color:#f0f0f0; padding-bottom : 20px;}
+.colonne_centre {overflow: visible;	width: 80%;background: #ffffff;center;box-shadow: 0px 0px 20px #555; padding-bottom : 20px;margin-top: 150px;}
+.corps	{margin:5% 15%; text-align:justify}
+.avec_survol    {font-family:Petit Formal Script; color:black; text-decoration: none;}
+.menu	{padding:20px 15px;}
+.menu li {  display:inline;padding:0% 2%;float:left;}
 .dropdown-content {  display: none; text-align:left;  position: absolute; background: rgba(100,100,100,0.9);  min-width: 120px;  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  padding: 12px 16px; }
 .dropdown-content a {  float: none;  text-decoration: none; display: block; padding: 12px 0px; }
 .dropdown {  position: relative;  display: inline-block;}
-
+.navbar {  overflow: visible;  background-color:rgb(100,100,100);  position: fixed;
+  top: 0;  width: 100%;}
 
 /* ********************************************************************* */
 /* ********************ECRAN NON TACTILE ******************************* */
 /* ********************************************************************* */
 @media (hover: hover) 
-	{
-	.navbar li:hover{text-shadow:5px 5px 10px black;}
-	.dropdown a:hover{text-shadow:5px 5px 10px black;}
+	{.dropdown a:hover{text-shadow:5px 5px 10px black;}
 	.dropdown:hover .dropdown-content{display: block;}
-	.sans_survol{display: none;}
-	}
+	.menu li {font-size:25px;}
+	.menu_fleche{width: 40px ;height : auto;}
+	.menu_maison{width: 80px ;height : auto;}
+	.menu_sauf_maison{padding:20px 0px;}
+	.corps{font-size:20px;}
+	.sans_survol{display: none;}}
 
 /* ********************************************************************* */
 /* *********************** ECRAN TACTILE ******************************* */
 /* ********************************************************************* */
 @media (hover: none) 
 	{
+	body{margin:0px 0px;background-color:#ffffff;}
+	.colonne_centre {width: 100%;}
+	.menu li {font-size:6vw;padding:2px 0%;}
+	.menu_fleche{width: 40px ;height : auto;}
+	.menu_maison{width: 100px ;height : auto;}
+	.menu_sauf_maison{padding:30px 0px;}
 	.avec_survol{display: none;} .show {display: block;} 
-	}
+	.corps{ margin : 5% 5% ;font-size:4vw;}}
