@@ -17,6 +17,7 @@ p { padding: 20px; }
 /* ********************************************************************* */
 @media (hover: hover) 
 	{
+	.navbar li:hover{text-shadow:5px 5px 10px black;}
 	.dropdown a:hover{text-shadow:5px 5px 10px black;}
 	.dropdown:hover .dropdown-content{display: block;}
 	.sans_survol{display: none;}
