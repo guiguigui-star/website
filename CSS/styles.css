@@ -2,14 +2,13 @@
 /* ******************* LES STYLES ************************************** */
 /* ********************************************************************* */
 body	{background-color:#ffffff; padding-bottom : 20px; margin:0; text-align:justify;text-align:center}
-.avec_survol    {font-family:Petit Formal Script; color:black; text-decoration: none;}
+.avec_survol    { text-decoration: none;}
 .menu	{padding:20px 15px;}
 .menu li {  display:inline;padding:0% 2%;float:left;}
 .dropdown-content {  display: none; text-align:left;  position: absolute; background: rgba(100,100,100,0.9);  min-width: 120px;  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  padding: 12px 16px; }
 .dropdown-content a {  float: none;  text-decoration: none; display: block; padding: 12px 0px; }
 .dropdown {  position: relative;  display: inline-block;}
-.navbar {  overflow: visible;  background-color:rgb(100,100,100);  position: fixed;
-  top: 0;  width: 100%;}
+.navbar {  overflow: visible;  background-color:rgb(100,100,100);  position: fixed;  top: 0;  width: 100%; font-family:Petit Formal Script; color:black;}
 
 /* ********************************************************************* */
 /* ********************ECRAN NON TACTILE ******************************* */
