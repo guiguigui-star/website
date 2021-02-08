@@ -1,7 +1,12 @@
 /* ********************************************************************* */
 /* ******************* LES STYLES ************************************** */
 /* ********************************************************************* */
-body	{background-color:#ffffff; padding-bottom : 20px; margin:0; text-align:justify;text-align:center}
+body	{background-color:#ffffff; padding-bottom : 20px; margin:0; text-align:center}
+p {text-align:justify;}
+h2 {}
+.galerie_image_gauche	{	display: inline;	float: left;	margin: auto;	}
+.galerie_image_droite	{	display: inline;	float: right;     margin: auto;	}
+
 .avec_survol    { text-decoration: none;color: #000000;}
 .sans_survol    { text-decoration: none;color: #000000;}
 .menu	{padding:20px 15px; text-decoration: none; text-align:center;}
