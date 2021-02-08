@@ -4,8 +4,6 @@
 body	{background-color:#ffffff; padding-bottom : 20px; margin:0; text-align:center}
 p {text-align:justify;}
 h2 {}
-.galerie_image_gauche	{display: inline; margin: auto; width: 40%; height: auto;}
-.galerie_image_droite	{display: inline; margin: auto; width: 40%; height: auto;}
 
 .avec_survol    { text-decoration: none;color: #000000;}
 .sans_survol    { text-decoration: none;color: #000000;}
@@ -23,7 +21,9 @@ h2 {}
 	{.dropdown a:hover{text-shadow:5px 5px 10px black;}
 	.dropdown:hover .dropdown-content{display: block;}
 	.menu li {font-size:25px;}
-	.sans_survol{display: none;}}
+	.sans_survol{display: none;}
+	.galerie_image_gauche	{display: inline; margin: auto; width: 40%; height: auto;}
+	.galerie_image_droite	{display: inline; margin: auto; width: 40%; height: auto;}}
 
 /* ********************************************************************* */
 /* *********************** ECRAN TACTILE ******************************* */
