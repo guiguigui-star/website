@@ -31,7 +31,7 @@ h2 {}
 /* ********************************************************************* */
 @media (hover: none) 
 	{
-	.menu li {font-size:6vw;padding:2px 0%;}
+	.menu li {font-size:100px;padding:2px 0%;}
 	.avec_survol{display: none;} .show {display: block;} 
 	p {padding:10px;}}
         }
