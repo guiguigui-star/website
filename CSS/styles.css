@@ -22,6 +22,7 @@ h2 {}
 	.dropdown:hover .dropdown-content{display: block;}
 	.menu li {font-size:8vh;}
         .navbar {height: 18vh;}
+        body {margin-top: 18vh;}
 	.sans_survol{display: none;}
 	.galerie_image_gauche	{display: inline; margin: auto; width: 40%; height: auto;}
 	.galerie_image_droite	{display: inline; margin: auto; width: 40%; height: auto;}
@@ -34,6 +35,7 @@ h2 {}
 	{
 	.menu li {font-size:75px;padding:2px 0%;}
         .navbar {height: 150px}
+        body {margin-top: 150px;}
 	.avec_survol{display: none;} .show {display: block;} 
 	p {padding:10px;}}
         }
