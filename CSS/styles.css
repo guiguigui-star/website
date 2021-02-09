@@ -23,7 +23,8 @@ h2 {}
 	.menu li {font-size:25px;}
 	.sans_survol{display: none;}
 	.galerie_image_gauche	{display: inline; margin: auto; width: 40%; height: auto;}
-	.galerie_image_droite	{display: inline; margin: auto; width: 40%; height: auto;}}
+	.galerie_image_droite	{display: inline; margin: auto; width: 40%; height: auto;}
+        p {padding:0;}}
 
 /* ********************************************************************* */
 /* *********************** ECRAN TACTILE ******************************* */
@@ -32,4 +33,5 @@ h2 {}
 	{
 	.menu li {font-size:6vw;padding:2px 0%;}
 	.avec_survol{display: none;} .show {display: block;} 
-	}
+	p {padding:10px;}}
+        }
