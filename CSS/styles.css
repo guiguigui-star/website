@@ -20,7 +20,8 @@ h2 {}
 @media (hover: hover) 
 	{.dropdown a:hover{text-shadow:5px 5px 10px black;}
 	.dropdown:hover .dropdown-content{display: block;}
-	.menu li {font-size:8vh;}
+	p {font-size : 20px;}
+	.menu li {font-size:5vh;}
         .navbar {height: 18vh;}
         body {margin-top: 18vh;}
 	.sans_survol{display: none;}
