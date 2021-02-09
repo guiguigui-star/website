@@ -20,8 +20,8 @@ h2 {}
 @media (hover: hover) 
 	{.dropdown a:hover{text-shadow:5px 5px 10px black;}
 	.dropdown:hover .dropdown-content{display: block;}
-	.menu li {font-size:10vh;}
-        .navbar {height: 25vh;}
+	.menu li {font-size:8vh;}
+        .navbar {height: 18vh;}
 	.sans_survol{display: none;}
 	.galerie_image_gauche	{display: inline; margin: auto; width: 40%; height: auto;}
 	.galerie_image_droite	{display: inline; margin: auto; width: 40%; height: auto;}
@@ -32,8 +32,8 @@ h2 {}
 /* ********************************************************************* */
 @media (hover: none) 
 	{
-	.menu li {font-size:50px;padding:2px 0%;}
-        .navbar {height: 100px}
+	.menu li {font-size:75px;padding:2px 0%;}
+        .navbar {height: 150px}
 	.avec_survol{display: none;} .show {display: block;} 
 	p {padding:10px;}}
         }
