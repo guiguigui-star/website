@@ -3,7 +3,7 @@
 /* ********************************************************************* */
 body	{background-color:#ffffff; padding-bottom : 20px; margin:0; text-align:center}
 p {text-align:justify;}
-h1 {font-family: 'Big Shoulders Display', cursive; margin : 20px 20px;}
+h1 {font-family: 'Big Shoulders Display', cursive; padding : 50px 50px;font-size : 60px;}
 
 .avec_survol    { text-decoration: none;color: #000000;}
 .sans_survol    { text-decoration: none;color: #000000;}
