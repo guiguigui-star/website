@@ -5,7 +5,7 @@ body	{background-color:#ffffff; padding-bottom : 20px; margin:0; text-align:cent
 p {text-align:justify;}
 h2 {}
 
-.fond_couleur   { background-color:#fdfde2; }
+.fond_couleur   { background-color:#fdfde2; margin:0; padding:0}
 .avec_survol    { text-decoration: none;color: #000000;}
 .sans_survol    { text-decoration: none;color: #000000;}
 .menu	{padding:0px 0px; text-decoration: none; text-align:center;}
@@ -40,5 +40,5 @@ h2 {}
         body {margin-top: 150px;}
 	.avec_survol{display: none;} .show {display: block;} 
 	p {padding:14px;}
-        img {padding:0px;}
+        img {width:100%}
         }
