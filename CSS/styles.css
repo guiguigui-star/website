@@ -40,5 +40,5 @@ h2 {}
         body {margin-top: 150px;}
 	.avec_survol{display: none;} .show {display: block;} 
 	p {padding:14px;}
-        img {width:100%}
+        img {width:100%; margin:0; padding:0}
         }
