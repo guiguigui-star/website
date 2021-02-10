@@ -27,6 +27,7 @@ h1 {font-family: 'Big Shoulders Display', cursive; padding : 50px 50px;font-size
 	.sans_survol{display: none;}
 	.img_cote_cote	{display: inline; margin: auto; height: 30vw; width: auto;}
 	.img_full_large {width:100%; margin:0; padding:0}
+	.img_vignette {width: 50vw; height:auto;}
         p {padding:0;}}
 
 /* ********************************************************************* */
@@ -40,5 +41,5 @@ h1 {font-family: 'Big Shoulders Display', cursive; padding : 50px 50px;font-size
 	.avec_survol{display: none;} .show {display: block;} 
 	p {padding:14px;}
         .img_full_large {width:100%; margin:0; padding:0}
-        .img_vignette {width: 60vw; height:45vw;}
+        .img_vignette {width: 60vw; height:auto;}
         }
