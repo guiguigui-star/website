@@ -39,5 +39,6 @@ h2 {}
         .navbar {height: 150px}
         body {margin-top: 150px;}
 	.avec_survol{display: none;} .show {display: block;} 
-	p {padding:14px;}}
+	p {padding:14px;}
+        img {padding:0px;}
         }
