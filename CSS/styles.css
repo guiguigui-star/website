@@ -35,7 +35,7 @@ h1 {font-family: 'Big Shoulders Display', cursive; padding : 50px 50px;font-size
 /* ********************************************************************* */
 @media (hover: none) 
 	{
-	.menu li {font-size:50px;padding:2px 100px;}
+	.menu li {font-size:50px;padding:25px 10px;}
         .navbar {height: 150px}
         body {margin-top: 150px;}
 	.avec_survol{display: none;} .show {display: block;} 
