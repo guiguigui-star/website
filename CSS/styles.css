@@ -26,7 +26,7 @@ h1 {font-family: 'Big Shoulders Display', cursive; padding : 50px 50px;font-size
         body {margin-top: 18vh;}
 	.sans_survol{display: none;}
 	.img_cote_cote	{display: inline; margin: auto; height: 30vw; width: auto;}
-	.img_full_large {height:80%; width:auto; margin:0; padding:0}
+	.img_full_large {height:80vh; width:auto; margin:0; padding:0}
 	.img_vignette {width: 50vw; height:auto;}
         p {padding:0;}}
 
