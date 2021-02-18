@@ -22,7 +22,7 @@ h1 {font-family: 'Big Shoulders Display', cursive; padding : 50px 50px;font-size
 	.dropdown:hover .dropdown-content{display: block;}
 	p {font-size : 20px; margin-right : 10%; margin-left: 10%;}
 	.menu li {font-size:5vh;}
-	.menu{margin : 25 0}
+	.menu{margin : 50 0}
         .navbar {height: 18vh;}
         body {margin-top: 18vh;}
 	.sans_survol{display: none;}
